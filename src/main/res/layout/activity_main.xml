@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/runtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type and Run"
+        android:layout_margin="5dp"
+        android:textSize="20dp"
+        />
+    <TextView
+        android:id="@+id/textmake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make"
+        android:layout_below="@+id/runtype"
+        android:layout_marginLeft="15dp"
+
+        />
+    <EditText
+        android:id="@+id/make"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/textmake"
+        android:inputType="text"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+    <TextView
+        android:id="@+id/textyear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Year"
+        android:layout_below="@+id/make"
+        android:layout_marginLeft="20dp"
+
+
+        />
+    <EditText
+        android:id="@+id/year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/textyear"
+        android:inputType="date"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <TextView
+        android:id="@+id/textColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color"
+        android:layout_below="@+id/year"
+        android:layout_marginLeft="20dp"
+
+
+        />
+    <EditText
+        android:id="@+id/color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/textColor"
+        android:inputType="text"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <TextView
+        android:id="@+id/purchase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Purchase price($)"
+        android:layout_below="@+id/color"
+        android:layout_marginLeft="20dp"
+
+
+        />
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/purchase"
+        android:inputType="numberDecimal"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <TextView
+        android:id="@+id/engine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Engine size(in litre)"
+        android:layout_below="@id/price"
+        android:layout_marginLeft="20dp"
+
+        />
+    <EditText
+        android:id="@+id/size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/engine"
+        android:inputType="numberDecimal"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <Button
+        android:id="@+id/car"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Create car"
+        android:layout_below="@+id/size"
+        />
+    <Button
+        android:id="@+id/diesel"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/car"
+        android:layout_below="@+id/size"
+        android:text="create Diesel"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="5dp"
+        />
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/car"
+
+        >
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/text_background"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+           />
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
